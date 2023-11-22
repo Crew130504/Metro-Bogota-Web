@@ -13,7 +13,7 @@
     </head>
     <body>
         <header>
-            <img src="" alt="Logo de Bogotá sobre un paisáje urbano">
+            <img src="" alt="Logo del Metro de Bogotá sobre un paisáje urbano">
         </header>
         <section>
             <h5>Bienvenido, aquí podrás ver:</h5>
@@ -23,14 +23,14 @@
                 <a href="">Rutas del metro</a>
                 <a href="">Horarios</a>
                 <a href="">Estaciones</a>
-                <a href="">Mapa del sistema</a>
+                <a href="">Mapa del sistema integrado</a>
             </nav>
         </section>
         <main>
-
+            
         </main>
         <footer>
-            
+
         </footer>
     </body>
 </html>
