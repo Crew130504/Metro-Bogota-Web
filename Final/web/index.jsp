@@ -10,6 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Metro de Bogotá 🚇</title>
+        <link rel="stylesheet" href="styles/indexStyle.css" type="text/css"/>
     </head>
     <body>
         <header>
@@ -23,14 +24,12 @@
                 <a href="">Rutas del metro</a>
                 <a href="">Horarios</a>
                 <a href="">Estaciones</a>
-                <a href="">Mapa del sistema integrado</a>
+                <a href="pages/map.html" target="_blank">Mapa del sistema integrado</a>
+                <a 
             </nav>
         </section>
         <main>
-            
+            <jsp:include page="${somePage}.jsp" flush="true" />
         </main>
-        <footer>
-
-        </footer>
     </body>
 </html>
