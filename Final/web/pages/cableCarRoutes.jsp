@@ -13,7 +13,7 @@
     </head>
     <body>
         <form action="" method="POST">
-            <input type="text" name="" id="" placeholder="Busca una ruta aquí!">
+            
             <img src="" alt="lupa">
         </form>
         

@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
 <html>
@@ -26,11 +27,11 @@
                 <a href="ScheduleServlet?main=schedules">Horarios</a>
                 <a href="StationServlet?main=stations">Estaciones</a>
                 <a href="pages/map.html" target="_blank">Mapa del sistema integrado</a>
-                
+                <a href="Controller?">Click acá para ver el ejemplo</a>
             </nav>
         </section>
         <main>
-            <jsp:include page="${main}.jsp" flush="true" />
+            <jsp:include page="pages/stations.jsp" flush="true" />
         </main>
     </body>
 </html>
