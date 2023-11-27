@@ -4,7 +4,8 @@
     Author     : braya
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,8 +13,9 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <c:forEach items="${object}" var = "product">
-            <p><c:out value="${object.getName()}"/></p>
+        <c:forEach items="${route}" var = "product">
+            <p><c:out value="${route.getName()}"/></p>           
+
         </c:forEach>
     </body>
 </html>

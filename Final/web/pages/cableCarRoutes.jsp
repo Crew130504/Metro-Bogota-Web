@@ -12,6 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <form action="" method="POST">
+            <input type="text" name="" id="" placeholder="Busca una ruta aquí!">
+            <img src="" alt="lupa">
+        </form>
+        
     </body>
 </html>

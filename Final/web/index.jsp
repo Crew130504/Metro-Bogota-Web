@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,17 +20,17 @@
         <section>
             <h5>Bienvenido, aquí podrás ver:</h5>
             <nav>
-                <a href="">Descripción de rutas</a>
-                <a href="">Rutas del metrocable</a>
-                <a href="">Rutas del metro</a>
-                <a href="">Horarios</a>
-                <a href="">Estaciones</a>
+                <a href="RoutesDescServlet?main=cableCarRoutes">Descripción de rutas</a>
+                <a href="CableCarRoutesServlet?main=cableCarRoutes">Rutas del metrocable</a>
+                <a href="MetroRoutesServlet?main=metroRoutes">Rutas del metro</a>
+                <a href="ScheduleServlet?main=schedules">Horarios</a>
+                <a href="StationServlet?main=stations">Estaciones</a>
                 <a href="pages/map.html" target="_blank">Mapa del sistema integrado</a>
-                <a 
+                
             </nav>
         </section>
         <main>
-            <jsp:include page="${somePage}.jsp" flush="true" />
+            <jsp:include page="${main}.jsp" flush="true" />
         </main>
     </body>
 </html>
