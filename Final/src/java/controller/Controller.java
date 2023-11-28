@@ -37,6 +37,8 @@ public class Controller extends HttpServlet {
         stations.add(new Station("2", "b"));
         stations.add(new Station("3", "b"));
 
+        
+        request.setAttribute("page", "stations");
         request.setAttribute("stations", stations);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");

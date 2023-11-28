@@ -32,7 +32,7 @@
             </nav>
         </section>
         <main>
-            <jsp:include page="pages/stations.jsp"/> 
+            <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
             
         </main>
     </body>
