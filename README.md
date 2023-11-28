@@ -32,15 +32,17 @@ Las tecnologías usadas en el desarrollo del proyecto son:
 - HTML/CSS/JS
 - MySQL
 
-## Integrantes (nombre - código)
+## Integrantes (nombre - código-rol)
 
--Brayan Steven Sanchez- 20212020092
+-Brayan Steven Sanchez-20212020092-(Backend)
 
--Valentina Parra-20212020025
+-Valentina Parra-20212020025-(Frontend)
 
--Juan Pablo Angulo Guerrero-20222020099
+-Juan Pablo Angulo Guerrero-20222020099-(Backend)
 
--Brayan Sierra Diaz - 20212020036
+-Brayan Sierra Diaz - 20212020036-(Frontend)
+
+-David Santiago Muñoz-20222020054-(Diseño de Imagenes)
 
 ## Licencia
 
