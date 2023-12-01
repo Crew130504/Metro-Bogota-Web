@@ -42,7 +42,8 @@
 
         </section>
         <main>
-           
+            <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
+   
         </main> 
             <footer><a href="" class="about">...about us</a></footer>
     </body>
