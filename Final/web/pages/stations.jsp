@@ -15,10 +15,16 @@
     </head>
     <p>Estás son las estaciones de nuestro sistema integrado, algunas estaciones 
         son de gran importacia para el turismo. Explora y entérate.</p>
-    <ul>
+    
         <c:forEach var="station" items="${stations}">
-            <li>${station.description} : ${station.name}</li>
-        </c:forEach>
-    </ul>
+            <div>
+                <div>
+                    ${station.name}
+                </div>                
+                <div>
+                    ${station.description}
+                </div>
+            </div>             
+        </c:forEach>    
     
 </html>
