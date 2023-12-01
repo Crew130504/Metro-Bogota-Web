@@ -11,7 +11,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+    <h3>¡Bienvenido al sitio Web del metro de Bogotá! </h3>
+    <p>conozca todos los detalles del Sistema. Aquí podrá encontrar las rutas que
+        se integran a ella, sus horarios, servicios, sitios de interés cercanos y más.
+    </p>
 </html>

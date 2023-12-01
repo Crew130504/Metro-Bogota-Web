@@ -29,12 +29,12 @@
             <section class="menu">
                 <nav>
                     <ul>
-                        <li><a href="">Inicio               &#x2b9a</a></li>
+                        <li><a href="">Inicio &#x2b9a</a></li>
                         <li><a href="">Descripción de rutas &#x2b9a</a></li>
                         <li><a href="">Rutas del metrocable &#x2b9a</a></li>
-                        <li><a href="">Rutas del metro      &#x2b9a</a></li>
-                        <li><a href="">Horarios             &#x2b9a</a></li>
-                        <li><a href="">Estaciones           &#x2b9a</a></li>
+                        <li><a href="">Rutas del metro &#x2b9a</a></li>
+                        <li><a href="">Horarios &#x2b9a</a></li>
+                        <li><a href="">Estaciones &#x2b9a</a></li>
                         <li><a href="pages/map.html" target="_blank">Mapa del sistema integrado 🖈 </a></li>
                     </ul>
                 </nav>
