@@ -15,7 +15,7 @@
     </head>
     <p>Estás son las estaciones de nuestro sistema integrado, algunas estaciones 
         son de gran importacia para el turismo. Explora y entérate.</p>
-    <div class="table list">
+    <div class="wrapper">
         <c:forEach var="station" items="${stations}">
             <div class="box">
                 <div>
