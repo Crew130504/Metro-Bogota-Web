@@ -27,4 +27,5 @@ public class Conexion {
     public static void desconectar () {
         cn = null;
     }
+    
 }
