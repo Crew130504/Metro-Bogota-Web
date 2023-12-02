@@ -16,7 +16,12 @@
         <c:forEach var="route" items="${routes}">
             <div class="box" style="background-color: ${route.color}">
                 <div>
-                    ${route.name}
+                    <div>
+                        ${route.letter}
+                    </div>
+                    <div>
+                        ${route.origin} - ${route.desitiny}
+                    </div>
                 </div>
                 <div>
                     ${route.description}

@@ -12,17 +12,30 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-        <p>Aquí podrá encontrar las rutas de metro que actualmente están en funcionamiento.</p>
-    
-        <table cellspacing="2" cellpadding="2">
-            <tbody>                
-                <c:forEach items="${routes}" var = "route">                    
-                    <tr>
-                        <td>${route.getLetter()}</td>
-                    </tr>
-                </c:forEach>
-            </tbody>
-        </table>
+    <p>Aquí podrá encontrar las rutas de metro que actualmente están en funcionamiento.</p>
 
-    
+    <div class="wrapper">
+        <c:forEach var="route" items="${routes}">
+            <div class="box">
+                
+                <div>
+                    ${route.letter}
+                </div>
+                <div>
+                    ${route.origin} - ${route.destiny}
+                </div>                    
+            </div>
+                 <details>
+                    <summary class="acordeon"><img class="img-acordeon" src="imagenes/icono.png" alt="icono"  > 
+                        Ruta 
+                       <span>A</span>   
+                    </summary>
+                    <p>Detalles de la ruta A.</p>
+                </details>
+
+        </div>
+    </c:forEach>
+</div>
+
+
 </html>

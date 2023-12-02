@@ -3,10 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/Users/USUARIO/Music/final/Final/web/styles/index.css</file>
             <file>file:/C:/Users/USUARIO/Music/final/Final/web/index2.jsp</file>
             <file>file:/C:/Users/USUARIO/Music/final/Final/web/index.jsp</file>
             <file>file:/C:/Users/USUARIO/Music/final/Final/web/styles/indexStyle.css</file>
+=======
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/web/pages/schedules.jsp</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/web/pages/home.jsp</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/web/pages/stations.jsp</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/web/index.jsp</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/src/java/Control/ServletBD.java</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/src/java/Modelo/Station.java</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/src/java/controller/servlets/StationServlet.java</file>
+            <file>file:/D:/Proyects/University/Advance%20OOD/finalHG/Final/web/index3.jsp</file>
+>>>>>>> refs/remotes/origin/preindex
         </group>
     </open-files>
 </project-private>
