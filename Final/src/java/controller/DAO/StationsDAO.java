@@ -29,7 +29,7 @@ public class StationsDAO {
         this.rs = null;
     }
 
-    public ArrayList<Station> verEstaciones() {
+    public ArrayList<Station> getStations() {
         ArrayList<Station> listaEstaciones = new ArrayList<>();
         try {
             con = Conexion.getConexion();

@@ -35,7 +35,7 @@ public class StationServlet extends HttpServlet {
             throws ServletException, IOException {
         request.setAttribute("page", "stations");
 
-        request.setAttribute("stations", stationsdao.verEstaciones());
+        request.setAttribute("stations", stationsdao.getStations());
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
