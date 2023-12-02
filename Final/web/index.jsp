@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,7 +31,7 @@
                     <ul>
                         <li><a href="HomeServlet?">Inicio &#x2b9a</a></li>
                         <li><a href="RouteServlet?get=description">Descripción de rutas &#x2b9a</a></li>
-                        <li><a href="RouteServlet?get=cable">Rutas del metrocable &#x2b9a</a></li>
+                        <li><a href="RouteServlet?">Rutas del sistema&#x2b9a</a></li>
                         <li><a href="RouteServlet?get=metro">Rutas del metro &#x2b9a</a></li>
                         <li><a href="ScheduleServlet?">Horarios &#x2b9a</a></li>
                         <li><a href="StationServlet?">Estaciones &#x2b9a</a></li>

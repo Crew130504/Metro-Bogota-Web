@@ -4,8 +4,9 @@
  */
 package controller.servlets;
 
+import Modelo.RouteVO;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -30,36 +31,19 @@ public class RouteServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     
-    private RouteDbDao dao;
+    //private RouteDbDao dao;
     
-    RouteServlet () {
-        RouteDbDao dao = new RouteDbDao();
-    }
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setAttribute("page", "routes");
         
-        String get = request.getParameter("get");
+        ArrayList<RouteVO> routes = new ArrayList<>();
+        routes.add(new RouteVO("S - Suba", "Lorep Ipsum", "images/image.png"));
+        routes.add(new RouteVO("A - Caracas", "Lorep Ipsum", "images/image.png"));
+        routes.add(new RouteVO("B - Americas", "Lorep Ipsum", "images/image.png"));
         
-        switch (get) {
-            case "description":
-                request.setAttribute("page", "routesDescription");
-                request.setAttribute("routes", dao.getDescriptions());
-                break;
-            case "cable":
-                request.setAttribute("page", "cableCarRoutes");
-                request.setAttribute("routes", dao.getRoutes("cable"));
-                break;
-            case "metro":
-                request.setAttribute("page", "metroRoutes");
-                request.setAttribute("routes", dao.getRoutes("metro"));
-                break;
-            case "image":
-                
-                break;
-            
-            default:
-                throw new AssertionError();
-        }
+        request.setAttribute("routes", routes);
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
