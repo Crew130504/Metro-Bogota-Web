@@ -1,4 +1,4 @@
-package Control;
+package controller.DAO;
 
 import Modelo.Developers;
 import java.io.FileInputStream;
@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Properties {
+public class DeveloperPropDao {
     
     // Método que recibe un objeto Properties y devuelve una lista de objetos Developers
     public List<Developers> Properties(java.util.Properties propiedades) {
