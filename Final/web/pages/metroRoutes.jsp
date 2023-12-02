@@ -33,9 +33,9 @@
                     <p>${route.description}</p>
                 </details>
 
-        </div>
+        
     </c:forEach>
-</div>
+    </div>
 
 
 </html>
