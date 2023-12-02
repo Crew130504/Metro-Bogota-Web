@@ -28,12 +28,12 @@
             <section class="menu">
                 <nav>
                     <ul>
-                        <li><a href="">Inicio &#x2b9a</a></li>
-                        <li><a href="">Descripción de rutas &#x2b9a</a></li>
-                        <li><a href="">Rutas del metrocable &#x2b9a</a></li>
-                        <li><a href="">Rutas del metro &#x2b9a</a></li>
-                        <li><a href="">Horarios &#x2b9a</a></li>
-                        <li><a href="StationServlet">Estaciones &#x2b9a</a></li>
+                        <li><a href="HomeServlet?">Inicio &#x2b9a</a></li>
+                        <li><a href="RouteServlet?get=description">Descripción de rutas &#x2b9a</a></li>
+                        <li><a href="RouteServlet?get=cable">Rutas del metrocable &#x2b9a</a></li>
+                        <li><a href="RouteServlet?get=metro">Rutas del metro &#x2b9a</a></li>
+                        <li><a href="ScheduleServlet?">Horarios &#x2b9a</a></li>
+                        <li><a href="StationServlet?">Estaciones &#x2b9a</a></li>
                         <li><a href="pages/map.html" target="_blank">Mapa del sistema integrado 🖈 </a></li>
                     </ul>
                 </nav>
