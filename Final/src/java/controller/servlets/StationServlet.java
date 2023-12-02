@@ -4,9 +4,8 @@
  */
 package controller.servlets;
 
-import Modelo.Station;
+import controller.DAO.StationsDAO;
 import java.io.IOException;
-import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -21,6 +20,8 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "StationServlet", urlPatterns = {"/StationServlet"})
 public class StationServlet extends HttpServlet {
 
+    private StationsDAO stationsdao = new StationsDAO();
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -31,21 +32,16 @@ public class StationServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {        
+            throws ServletException, IOException {
         request.setAttribute("page", "stations");
-        
-        ArrayList<Station> stations = new ArrayList<>();
-        stations.add(new Station("a","1"));
-        stations.add(new Station("a","1"));
-        stations.add(new Station("a","1"));
-        
-        request.setAttribute("stations", stations);
-        
-        
+
+        request.setAttribute("stations", stationsdao.getStations());
+
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
-                
+
     }
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

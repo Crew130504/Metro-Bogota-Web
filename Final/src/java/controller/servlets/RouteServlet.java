@@ -29,19 +29,29 @@ public class RouteServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+    
+    private RouteDbDao dao;
+    
+    RouteServlet () {
+        RouteDbDao dao = new RouteDbDao();
+    }
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
         String get = request.getParameter("get");
         
         switch (get) {
             case "description":
                 request.setAttribute("page", "routesDescription");
+                request.setAttribute("routes", dao.getDescriptions());
                 break;
             case "cable":
                 request.setAttribute("page", "cableCarRoutes");
+                request.setAttribute("routes", dao.getRoutes("cable"));
                 break;
             case "metro":
                 request.setAttribute("page", "metroRoutes");
+                request.setAttribute("routes", dao.getRoutes("metro"));
                 break;
             case "image":
                 
