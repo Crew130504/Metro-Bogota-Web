@@ -12,7 +12,8 @@
         <title>JSP Page</title>
     </head>
     <h3>¡Bienvenido al sitio Web del metro de Bogotá! </h3>
-    <p>conozca todos los detalles del Sistema. Aquí podrá encontrar las rutas que
+    <p>Conozca todos los detalles del Sistema, aquí podrá encontrar las rutas que
         se integran a ella, sus horarios, servicios, sitios de interés cercanos y más.
     </p>
+    <img class="inicio" src="imagenes/metro.jpg" alt="imagen metro"  >
 </html>

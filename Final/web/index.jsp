@@ -42,8 +42,8 @@
         </section>
         <main>
          
-                <h1> Bienvenido!</h1>
-                 <img class="inicio" src="imagenes/metro.jpg" alt="imagen metro"  >
+                
+                 
                  <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
         </main>
         <footer><a href="" class="about">...about us</a></footer>

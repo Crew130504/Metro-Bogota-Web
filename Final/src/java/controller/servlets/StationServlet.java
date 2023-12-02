@@ -39,6 +39,8 @@ public class StationServlet extends HttpServlet {
         stations.add(new Station("a","1"));
         stations.add(new Station("a","1"));
         
+        //StationDbDao dao = new StationDbDao();
+        //ArrayList<Station> stations = dao.getAll();
         request.setAttribute("stations", stations);
         
         
