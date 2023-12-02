@@ -4,19 +4,18 @@
     Author     : USUARIO
 --%>
 
-<%@ page contentType="text/html" pageEncoding="UTF-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Metro de Bogotá 🚇</title>
-        <link rel="stylesheet" href="styles/indexStyle.css" type="text/css"/>
+        <link rel="stylesheet" href="styles/index.css" type="text/css"/>
         
     </head>
     <body>
         <header class="contenedor">
+            <a href="" class="about" >   👁 about us</a>
             <img class="imagen" src="imagenes/bogotaLogo.jpeg" alt="Logo del Metro de Bogotá sobre un paisáje urbano"  >
             <h1 class="titulo">
                 <span class="word1">🚇 METRO</span>
@@ -42,9 +41,11 @@
 
         </section>
         <main>
-            <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
-   
-        </main> 
-            <footer><a href="" class="about">...about us</a></footer>
+         
+                <h1> Bienvenido!</h1>
+                 <img class="inicio" src="imagenes/metro.jpg" alt="imagen metro"  >
+                 <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
+        </main>
+        <footer><a href="" class="about">...about us</a></footer>
     </body>
 </html>
