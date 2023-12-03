@@ -12,19 +12,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="styles/stationStyle.css" type="text/css"/>
     </head>
     <p>Estás son las estaciones de nuestro sistema integrado, algunas estaciones 
         son de gran importacia para el turismo. Explora y entérate.</p>
     <div class="wrapper">
         <c:forEach var="station" items="${stations}">
-            <div class="box">
-                <div>
+            <details class="box">
+                <summary class="name">
                     ${station.name}
-                </div>
-                <div>
+                </summary>
+                <div class="description">
                     ${station.description}
                 </div>
-            </div>
+            </details>
         </c:forEach>
-    </div>    
+    </div>   
+   
 </html>

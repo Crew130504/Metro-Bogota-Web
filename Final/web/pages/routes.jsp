@@ -19,7 +19,7 @@
         <div class="wrapper">
             <c:forEach items="${routes}" var = "route">                    
                 <details> 
-                    <summary>
+                    <summary style="background-color: ${route.color}">
                         ${route.name} | <%-- ${route.path} esto es un comentario --%>
                     </summary>
                     <div>
