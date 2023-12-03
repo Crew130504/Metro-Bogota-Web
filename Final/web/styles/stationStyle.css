@@ -28,6 +28,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color: white;
     padding: 1rem;
     text-align: center; 
-    background-color: lightcoral;
+    background-color: #eb1805;
     border-radius: .5rem;
 }
+.name:hover{
+    background: rgba(255, 0, 0, 0.747);
+    color:#edf10f  ;
+    font-weight: bold;
+}
+
