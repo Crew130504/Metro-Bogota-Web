@@ -15,6 +15,6 @@
     </head>
     <p>Conoce a los colaboradores que hicieron esto posible!</p>
     <div class="wrapper">
-        
+        <c:forEach
     </div>
 </html>
