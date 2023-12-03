@@ -1,15 +1,32 @@
 package Modelo;
 
-public class RouteVO {
+public class RouteVO {    
     private String name;
+    private String color;
     private String description;
-    private String image;
+    private String path;
+    private String day;
+    private String schedule;
+    private String url;
 
-    public RouteVO(String name, String description, String image) {
+
+    public RouteVO(String name, String color, String description, String originDestination, String url) {
         this.name = name;
+        this.color = color;
         this.description = description;
-        this.image = image;
+        this.path = originDestination;
+        this.url = url;
     }
+
+    public RouteVO(String name, String color, String day, String schedule) {
+        this.name = name;
+        this.color = color;
+        this.day = day;
+        this.schedule = schedule;
+    }
+
+   
+  
 
     public String getName() {
         return name;
@@ -17,6 +34,14 @@ public class RouteVO {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getDescription() {
@@ -27,13 +52,53 @@ public class RouteVO {
         this.description = description;
     }
 
-    public String getImage() {
-        return image;
+    public String getPath() {
+        return path;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setPath(String path) {
+        this.path = path;
     }
+
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+    
+
+
+
+    
+    
+    public RouteVO(String name, String schedule, String day) {
+        this.name = name;
+        this.schedule = schedule;
+        this.day = day;
+    }
+    
+    
+    
+    
+    
     
     
 }

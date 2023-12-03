@@ -5,6 +5,7 @@
 package controller.servlets;
 
 import Modelo.RouteVO;
+import controller.DAO.RouteDAO;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
@@ -34,16 +35,15 @@ public class RouteServlet extends HttpServlet {
     //private RouteDbDao dao;
     
     
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    public RouteServlet() {
+    }
+
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setAttribute("page", "routes");
         
-        ArrayList<RouteVO> routes = new ArrayList<>();
-        routes.add(new RouteVO("S - Suba", "Lorep Ipsum", "images/image.png"));
-        routes.add(new RouteVO("A - Caracas", "Lorep Ipsum", "images/image.png"));
-        routes.add(new RouteVO("B - Americas", "Lorep Ipsum", "images/image.png"));
+        RouteDAO dao = new RouteDAO();
         
-        request.setAttribute("routes", routes);
+        request.setAttribute("routes", dao.getRoutes());
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
         dispatcher.forward(request, response);
