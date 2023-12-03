@@ -39,8 +39,12 @@
             </section>
         </section>
         <main>
+<<<<<<< HEAD
+                 <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
+=======
             <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
+>>>>>>> refs/remotes/origin/preindex
         </main>
-        <footer><a href="" class="about">...about us</a></footer>
+       
     </body>
 </html>
