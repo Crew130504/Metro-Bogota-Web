@@ -14,8 +14,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     border-radius: .5rem;
 }
 
-.box {    
-    
+.box {   
+    border-radius: .75rem;
+    border: solid red;
     margin: 1rem .5rem 1rem .5rem;
 }
 
@@ -25,9 +26,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 }
 
 .name {
-    color: white;
+    color: gold;
     padding: 1rem;
     text-align: center; 
-    background-color: lightcoral;
+    background-color: red;
     border-radius: .5rem;
 }

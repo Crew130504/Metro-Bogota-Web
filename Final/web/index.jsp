@@ -11,8 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Metro de Bogotá 🚇</title>
-        <link rel="stylesheet" href="styles/index.css" type="text/css"/>
-        
+        <link rel="stylesheet" href="styles/index.css" type="text/css"/>        
     </head>
     <body>
         <header class="contenedor">
@@ -24,8 +23,7 @@
                 <span class="word3">BOGOTA 🚇 </span>
             </h1>    
         </header>
-        <section class="pagina">
-     
+        <section class="pagina">     
             <section class="menu">
                 <nav>
                     <ul>
@@ -39,13 +37,9 @@
                     </ul>
                 </nav>
             </section>
-
         </section>
         <main>
-         
-                
-                 
-                 <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
+            <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
         </main>
         <footer><a href="" class="about">...about us</a></footer>
     </body>
