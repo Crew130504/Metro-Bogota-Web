@@ -29,11 +29,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color: gold;
     padding: 1rem;
     text-align: center; 
-<<<<<<< HEAD
     background-color: #eb1805;
-=======
-    background-color: red;
->>>>>>> refs/remotes/origin/preindex
     border-radius: .5rem;
 }
 .name:hover{
