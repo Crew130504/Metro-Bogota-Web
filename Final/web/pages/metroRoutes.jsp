@@ -11,20 +11,29 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+         <link rel="stylesheet" href="styles/styleRutas.css" type="text/css"/>
     </head>
     <p>Aquí podrá encontrar las rutas de metro que actualmente están en funcionamiento.</p>
 
     <div class="wrapper">
         <c:forEach var="route" items="${routes}">
             <div class="box">
+                
                 <div>
-                    ${route.letter}
+                    
                 </div>
                 <div>
                     ${route.origin} - ${route.destiny}
                 </div>                    
             </div>
-
+            <section class="acordeones">
+                 <details>
+                    <summary class="acordeon"><img class="img-acordeon" src="imagenes/icono.png" alt="icono"  > 
+                       ${route.letter}  
+                    </summary>
+                    <p>${route.description}</p>
+                </details>
+             </section >
         
     </c:forEach>
     </div>
