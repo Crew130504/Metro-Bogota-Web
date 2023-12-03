@@ -15,16 +15,11 @@
         <link rel="stylesheet" href="styles/styleRutas.css" type="text/css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
-<<<<<<< HEAD
+
     <form action="/buscar" method="GET"> 
         <input type="search" id="busqueda" name="q" placeholder="Buscar Ruta...">
-        <input type="submit" value="&#128269" >
-         
-        
+        <input type="submit" value="&#128269" >        
     </form>
-=======
-
->>>>>>> refs/remotes/origin/preindex
     <p>Aquí podrá encontrar las rutas de metrocable que actualmente están en funcionamiento.</p>    
 
     <div class="wrapper">
