@@ -26,13 +26,14 @@
                     ${route.origin} - ${route.destiny}
                 </div>                    
             </div>
+            <section class="acordeones">
                  <details>
                     <summary class="acordeon"><img class="img-acordeon" src="imagenes/icono.png" alt="icono"  > 
                        ${route.letter}  
                     </summary>
                     <p>${route.description}</p>
                 </details>
-
+             </section >
         
     </c:forEach>
     </div>

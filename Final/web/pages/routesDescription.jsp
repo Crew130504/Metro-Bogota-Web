@@ -15,6 +15,7 @@
     <div class="table list">
         <c:forEach var="route" items="${routes}">
             <div class="box" style="background-color: ${route.color}">
+                
                 <div>
                     <div>
                         ${route.letter}
