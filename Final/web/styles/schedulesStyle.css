@@ -11,15 +11,22 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-radius: .5rem;
+    margin: .25rem;
 }
 
-.name .day .schedule {
+.name {
     text-align: center;
+    padding: .25rem;
 }
 
+.schedule {
+    text-align: center;
+    padding: .25rem
+}
 .day {
     background-color: whitesmoke;
     text-align: center;
+    padding: .25rem
 }
 
 .wrapper {

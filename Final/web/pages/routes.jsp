@@ -22,7 +22,7 @@
         <c:forEach items="${routes}" var = "route">
             <details class="acordeones"> 
                 <summary class="acordeon"> <img class="img-acordeon" src="imagenes/icono.png" alt="icono"  > 
-                    ${route.name} | <%-- ${route.path} esto es un comentario --%>
+                    ${route.name} | ${route.path} 
                 </summary>
                 <div class="detalles">
                     <div class="columna" class="description">

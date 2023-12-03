@@ -20,7 +20,7 @@ public class RouteDAO {
         this.rs = null;
     }
     
-      public ArrayList<RouteVO> verEstaciones() {
+      public ArrayList<RouteVO> getRoutes() {
         ArrayList<RouteVO> listasRutas = new ArrayList<>();
         try {
             con = Conexion.getConexion();
@@ -42,7 +42,7 @@ public class RouteDAO {
         return listasRutas;
     }
       
-      public ArrayList<RouteVO> verHorario() {
+      public ArrayList<RouteVO> getSchedule() {
         ArrayList<RouteVO> listasRutas = new ArrayList<>();
         try {
             con = Conexion.getConexion();
@@ -64,7 +64,7 @@ public class RouteDAO {
         return listasRutas;
     }
       
-            public ArrayList<RouteVO> consultarEstaciones(String nombre) {
+            public ArrayList<RouteVO> getRoute(String nombre) {
         ArrayList<RouteVO> listasRutas = new ArrayList<>();
         try {
             con = Conexion.getConexion();

@@ -1,12 +1,10 @@
 package Modelo;
 
-public class RouteVO {
-
-    
+public class RouteVO {    
     private String name;
     private String color;
     private String description;
-    private String originDestination;
+    private String path;
     private String day;
     private String schedule;
     private String url;
@@ -16,7 +14,7 @@ public class RouteVO {
         this.name = name;
         this.color = color;
         this.description = description;
-        this.originDestination = originDestination;
+        this.path = originDestination;
         this.url = url;
     }
 
@@ -54,12 +52,12 @@ public class RouteVO {
         this.description = description;
     }
 
-    public String getOriginDestination() {
-        return originDestination;
+    public String getPath() {
+        return path;
     }
 
-    public void setOriginDestination(String originDestination) {
-        this.originDestination = originDestination;
+    public void setPath(String path) {
+        this.path = path;
     }
 
     public String getDay() {
