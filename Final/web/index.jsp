@@ -15,7 +15,7 @@
     </head>
     <body>
         <header class="contenedor">
-            <a href="" class="about" >   👁 about us</a>
+            <a href="AboutServlet?" class="about" >   👁 About us...</a>
             <img class="imagen" src="imagenes/bogotaLogo.jpeg" alt="Logo del Metro de Bogotá sobre un paisáje urbano"  >
             <h1 class="titulo">
                 <span class="word1">🚇 METRO</span>
@@ -39,11 +39,7 @@
             </section>
         </section>
         <main>
-
-                
-
             <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
-
         </main>
        
     </body>

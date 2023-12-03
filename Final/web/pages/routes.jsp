@@ -25,26 +25,16 @@
 
     <div class="wrapper">
 
-        <c:forEach items="${routes}" var = "route">  
-            <section class="acordeones">
-                <details> 
-                    <summary class="acordeon"> <img class="img-acordeon" src="imagenes/icono.png" alt="icono"  > 
-                        ${route.name} | <%-- ${route.path} esto es un comentario --%>
-                    </summary>
-                    <div class="detalles">
-                        <div class="columna" class="description">
-                            ${route.description}
-                        </div>
-                        <div class="columna" class="image">
-                            <img src="imagenes/logo.png" alt="alt"/>  <!--img de prueb -->
-                            <!-- <img src="src" alt="alt"/> Pon alguna imagen -->
-                        </div>
-                    </div> 
-                            
-
-                </details>
-
-            </c:forEach>
+        <c:forEach items="${developers}" var = "developer">  
+            <div class="box">
+                <div class="name">
+                    <h2>${developer.name}</h2>
+                </div>
+                <div class="description">
+                    ${developer.description}
+                </div>
+            </div>
+        </c:forEach>
     </div>
 
 
