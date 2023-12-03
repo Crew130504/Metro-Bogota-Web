@@ -30,9 +30,9 @@
                 <nav>
                     <ul>
                         <li><a href="HomeServlet?">Inicio &#x2b9a</a></li>
-                        <li><a href="RouteServlet?get=description">Descripción de rutas &#x2b9a</a></li>
+                        <!-- <li><a href="RouteServlet?get=description">Descripción de rutas &#x2b9a</a></li> -->
                         <li><a href="RouteServlet?">Rutas del sistema&#x2b9a</a></li>
-                        <li><a href="RouteServlet?get=metro">Rutas del metro &#x2b9a</a></li>
+                        <!-- <li><a href="RouteServlet?get=metro">Rutas del metro &#x2b9a</a></li> -->
                         <li><a href="ScheduleServlet?">Horarios &#x2b9a</a></li>
                         <li><a href="StationServlet?">Estaciones &#x2b9a</a></li>
                         <li><a href="pages/map.html" target="_blank">Mapa del sistema integrado 🖈 </a></li>

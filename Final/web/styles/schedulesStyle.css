@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 dic. 2023, 22:22:43
+    Author     : braya
+*/
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: .5rem;
+}
+
+.name .day .schedule {
+    text-align: center;
+}
+
+.day {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.wrapper {
+    width: 80%;
+}

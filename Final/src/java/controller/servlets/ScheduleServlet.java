@@ -4,8 +4,11 @@
  */
 package controller.servlets;
 
+import Modelo.RouteVO;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -30,7 +33,16 @@ public class ScheduleServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+        request.setAttribute("page", "schedules");
+        
+        ArrayList<RouteVO> routes = new ArrayList<>();
+        routes.add(new RouteVO("A - Caracas", "4am-8pm", "L-S"));
+        routes.add(new RouteVO("B - Americas", "5am-11pm", "S-D"));
+        
+        request.setAttribute("routes", routes);
+        
+        RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+        dispatcher.forward(request, response);
         
     }
 
