@@ -13,17 +13,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <link rel="stylesheet" href="styles/styleRutas.css" type="text/css"/>
-        
+    
     </head>
     <form action="/buscar" method="GET"> 
         <input type="search" id="busqueda" name="q" placeholder="Buscar Ruta...">
         <input type="submit" value="&#128269" >    
         
     </form>
-    
+
     <p>Aquí podrá encontrar las rutas de metrocable que actualmente están en funcionamiento.</p>    
 
-    <div class="wrapper">
+     <div class="wrapper">
+
         <c:forEach items="${routes}" var = "route">
             <details class="acordeones"> 
                 <summary class="acordeon"> <img class="img-acordeon" src="imagenes/icono.png" alt="icono"  > 
@@ -40,6 +41,6 @@
                 </div>
             </details>
             </c:forEach>
-    </div>
-
+     </div>
+    
 </html>

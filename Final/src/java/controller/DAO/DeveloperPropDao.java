@@ -1,6 +1,6 @@
 package controller.DAO;
 
-import Modelo.Developers;
+import Modelo.Developer;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,12 +9,12 @@ import java.util.List;
 
 public class DeveloperPropDao {
     
-    // Método que recibe un objeto Properties y devuelve una lista de objetos Developers
-    public List<Developers> Properties(java.util.Properties propiedades) {
+    // Método que recibe un objeto Properties y devuelve una lista de objetos Developer
+    public List<Developer> Properties(java.util.Properties propiedades) {
     
         // Declaración de variables
         InputStream entrada = null;
-        List<Developers> listaDev = new ArrayList<>();
+        List<Developer> listaDev = new ArrayList<>();
 
         try {
             // Se abre un archivo de propiedades
@@ -33,12 +33,12 @@ public class DeveloperPropDao {
                 if (devInfo != null) {
                     String[] caracteristicasArray = devInfo.split(", ");
 
-                    // Verifica si hay suficientes elementos para crear un objeto Developers
+                    // Verifica si hay suficientes elementos para crear un objeto Developer
                     if (caracteristicasArray.length >= 2) {
                         String nombreDev = caracteristicasArray[0];
             
-                        // Crea un objeto Developers y lo agrega a la lista
-                        Developers addDev = new Developers();
+                        // Crea un objeto Developer y lo agrega a la lista
+                        Developer addDev = new Developer();
                         addDev.setName(nombreDev);
                         addDev.setDescription(caracteristicasArray[1]);
                         
@@ -57,7 +57,7 @@ public class DeveloperPropDao {
                     e.printStackTrace();
                 }
             }
-            // Devuelve la lista de objetos Developers
+            // Devuelve la lista de objetos Developer
             return listaDev;
         }
     }      
