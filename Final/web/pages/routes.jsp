@@ -17,10 +17,10 @@
     </head>
     <form action="/buscar" method="GET"> 
         <input type="search" id="busqueda" name="q" placeholder="Buscar Ruta...">
-        <input type="submit" value="&#128269" >
-             
+        <input type="submit" value="&#128269" >    
+        
     </form>
-
+    
     <p>Aquí podrá encontrar las rutas de metrocable que actualmente están en funcionamiento.</p>    
 
     <div class="wrapper">
