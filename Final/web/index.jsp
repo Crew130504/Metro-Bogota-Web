@@ -39,9 +39,6 @@
             </section>
         </section>
         <main>
-
-                
-
             <jsp:include page="pages/${empty page ? 'home' : page}.jsp"/>
 
         </main>
