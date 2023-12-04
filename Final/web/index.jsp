@@ -33,7 +33,7 @@
                         <!-- <li><a href="RouteServlet?get=metro">Rutas del metro &#x2b9a</a></li> -->
                         <li><a href="ScheduleServlet?">Horarios &#x2b9a</a></li>
                         <li><a href="StationServlet?">Estaciones &#x2b9a</a></li>
-                        <li><a href="pages/map.html" target="_blank">Mapa del sistema integrado 🖈 </a></li>
+                        <li><a href="Map?" target="_blank">Mapa del sistema integrado 🖈 </a></li>
                     </ul>
                 </nav>
             </section>

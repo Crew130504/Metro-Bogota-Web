@@ -6,20 +6,22 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class DeveloperPropDao {
     
     // Método que recibe un objeto Properties y devuelve una lista de objetos Developer
-    public List<Developer> Properties(java.util.Properties propiedades) {
-    
+    public List<Developer> Properties() {
+        Properties propiedades = new Properties();
         // Declaración de variables
         InputStream entrada = null;
         List<Developer> listaDev = new ArrayList<>();
 
         try {
             // Se abre un archivo de propiedades
-            entrada = new FileInputStream("src/data/Developers.properties");
-        
+            
+        entrada = getClass().getClassLoader().getResourceAsStream("Data/Developers.properties");
+
             // Se carga el archivo de propiedades en el objeto propiedades
             propiedades.load(entrada);
         
@@ -31,7 +33,7 @@ public class DeveloperPropDao {
                 String devInfo = propiedades.getProperty("Dev" + i);
 
                 if (devInfo != null) {
-                    String[] caracteristicasArray = devInfo.split(", ");
+                    String[] caracteristicasArray = devInfo.split("_");
 
                     // Verifica si hay suficientes elementos para crear un objeto Developer
                     if (caracteristicasArray.length >= 2) {

@@ -5,6 +5,7 @@
 package controller.servlets;
 
 import Modelo.Developer;
+import controller.DAO.DeveloperPropDao;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.RequestDispatcher;
@@ -20,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "AboutServlet", urlPatterns = {"/AboutServlet"})
 public class AboutServlet extends HttpServlet {
-
+    DeveloperPropDao dao= new DeveloperPropDao();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -38,10 +39,7 @@ public class AboutServlet extends HttpServlet {
         //request.setAttribute("developers", list);
         
         // Usar el dispatcher
-        ArrayList<Developer> list = new ArrayList<>();
-        list.add(new Developer("a", "b"));
-        list.add(new Developer("a", "b"));
-        list.add(new Developer("a", "b"));
+        ArrayList<Developer> list = (ArrayList<Developer>) dao.Properties() ;
         request.setAttribute("developers", list);
         
         RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");

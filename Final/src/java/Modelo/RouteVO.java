@@ -18,6 +18,9 @@ public class RouteVO {
         this.url = url;
     }
 
+    public RouteVO() {
+    }
+    
     public RouteVO(String name, String color, String day, String schedule) {
         this.name = name;
         this.color = color;
@@ -25,6 +28,15 @@ public class RouteVO {
         this.schedule = schedule;
     }
 
+    public RouteVO(String name, String color, String description, String path, String day, String schedule, String url) {
+        this.name = name;
+        this.color = color;
+        this.description = description;
+        this.path = path;
+        this.day = day;
+        this.schedule = schedule;
+        this.url = url;
+    }
    
   
 
