@@ -1,10 +1,15 @@
 package Modelo;
 
-public class Developers {
+public class Developer {
     private String name;
     private String description;
 
-    public Developers() {
+    public Developer(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+    
+    public Developer() {
     }
 
     public String getName() {

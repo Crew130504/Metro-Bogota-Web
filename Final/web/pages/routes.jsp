@@ -23,6 +23,7 @@
 
     <p>Aquí podrá encontrar las rutas de metrocable que actualmente están en funcionamiento.</p>    
 
+<<<<<<< HEAD
      <div class="wrapper">
         <c:forEach items="${routes}" var = "route">
             <details class="acordeones"> 
@@ -40,6 +41,20 @@
                 </div>
             </details>
             </c:forEach>
+=======
+    <div class="wrapper">
+
+        <c:forEach items="${developers}" var = "developer">  
+            <div class="box">
+                <div class="name">
+                    <h2>${developer.name}</h2>
+                </div>
+                <div class="description">
+                    ${developer.description}
+                </div>
+            </div>
+        </c:forEach>
+>>>>>>> refs/remotes/origin/about
     </div>
 
 
