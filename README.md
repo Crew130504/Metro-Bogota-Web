@@ -1,7 +1,5 @@
 # Metro Bogotá Web
 
-Este es el repositorio con la solución al proyecto final de Programación Avanzada "Metro Bogotá Web". 
-
 ## Descripción
 
 El proyecto consiste en desarrollar una aplicación web para la empresa Metro Bogotá, que permita consultar información sobre las rutas de metro, metrocable y tren de cercanías. 
